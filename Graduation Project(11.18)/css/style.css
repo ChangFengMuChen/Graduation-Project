@@ -1,0 +1,349 @@
+/* 初始化 */
+h4,
+h5,
+h6,
+h1,
+h2,
+h3 {
+	margin-top: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+body a:hover {
+	/* 动画时间为0.5s,作用于所有 */
+	transition: 0.5s all;
+	/* 以下是兼容各个浏览器 */
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}
+
+html,
+body {
+	/* 字体应用,应用字体库字体 */
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100%;
+	background: #fff;
+}
+
+/*-- Header Part Starts Here --*/
+/* 头部样式 */
+.header {
+	background: #000000;
+	padding: 2em 0;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: 10%;
+}
+
+/* 设置标题 */
+.title {
+	width: 30%;
+	float: left;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 200%;
+	margin-left: 10%;
+	color: white;
+}
+
+/* 跳转按钮的位置 */
+.navigation {
+	width: 70%;
+	float: right;
+	margin-right: -30%;
+}
+
+ul.navig {
+	padding: 0;
+	width: 65%;
+	float: left;
+	margin-top: 10px;
+}
+
+ul.navig li {
+	/* 行内块元素 */
+	display: inline-block;
+	margin: 0 10px;
+}
+
+ul.navig li a {
+	/* 仅有大写字母 */
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* 鼠标放在a上改变颜色 */
+ul.navig li a:hover {
+	color: #ff7105;
+}
+
+/* 设置nav下面的背景图片 */
+.banner {
+	background: url(../images/霞洛.jpg)no-repeat;
+	background-size: cover;
+	/* 兼容浏览器 */
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	min-height: 650px;
+}
+
+/* 设置巨幕下面的字体部分内容 */
+@media(max-width:1440px) {
+	.banner {
+		min-height: 600px;
+	}
+}
+
+/* 最外层div */
+.banner-bot {
+	padding: 4em 0;
+	text-align: center;
+}
+
+/* 对齐特定标签进行再次定义 */
+.banner-bot h2 {
+	font-size: 4em;
+	font-weight: 700;
+	color: #000;
+	margin: 0em 0 0.5em 0;
+}
+
+.banner-bot p {
+	font-size: 1.1em;
+	font-weight: 500;
+	color: #000;
+	line-height: 1.8em;
+	margin: 0 0 0.5em;
+}
+
+.banner-bot p:nth-of-type(2) {
+	font-weight: 100;
+	font-size: 0.875em;
+	margin-bottom: 2em;
+}
+
+.banner-bot a {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+}
+
+/* 设定动画效果,设置未显示的初始位置 */
+nav a,
+ul.navig a {
+	position: relative;
+	display: inline-block;
+	margin: 0px 0px 10px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+	font-size: 1.35em;
+}
+
+/* 设置鼠标放上之后的动画 */
+nav a:hover,
+nav a:focus,
+ul.navig a:hover,
+ul.navig a:focus {
+	outline: none;
+}
+
+/* 设置初始位置 */
+.cl-effect-3 a {
+	padding: 8px 0;
+}
+
+.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #ff7105;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+/* 设置鼠标放上之后动画变化 */
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.lunbo {
+	height: 700px;
+	overflow: hidden;
+}
+
+/* 缩略图 */
+.suoluetu{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/* 视频内容部分 */
+.video{
+	width: 100%;
+	height: 500px;
+	background: url(../images/动漫.jpg)no-repeat;
+	text-align: center;
+}
+.video-to{
+	margin-top: 10%;	
+}
+.video-zhuti{
+	margin-top: 15%;
+}
+
+/* 接近底部日志样式 */
+.what-new {
+	padding: 2em 0 4em;
+	text-align: center;
+}
+
+.what-new h3 {
+	font-size: 4em;
+	font-weight: 700;
+	color: #000;
+	margin: 0.5em 0;
+}
+
+.blog-news {
+	border-bottom: 1px solid rgba(60, 58, 62, 0.19);
+	padding: 0;
+}
+
+.blog-news-grid {
+	padding: 2em;
+	border-right: 1px solid rgba(60, 58, 62, 0.19);
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+.news-grid-left {
+	width: 40%;
+	margin-right: 2%;
+	float: left;
+}
+
+.news-grid-right {
+	width: 57%;
+	float: left;
+}
+
+.news-grid-left h4 {
+	font-weight: 500;
+	color: #3c3a3e;
+	font-size: 10em;
+	margin: -24px 0 -18px;
+}
+
+.news-grid-left small {
+	font-size: 1em;
+	color: #3c3a3e;
+	font-weight: 100;
+	font-style: italic;
+	padding-left: 20px;
+}
+
+.news-grid-right h4 {
+	font-size: 1.3em;
+	font-weight: 500;
+	color: #3c3a3e;
+	margin: 0 0 0.5em 0;
+}
+
+.news-grid-right p {
+	font-size: 1em;
+	font-weight: 100;
+	color: #3c3a3e;
+	line-height: 1.6em;
+}
+
+.b_n_g {
+	margin-right: 0;
+	border-right: 0;
+}
+
+.b_n {
+	border-bottom: 0;
+}
+
+/* 最底部内容 */
+.footer{
+	padding:2em 0;
+	text-align:center;
+	border-top:10px solid #3c3a3e;
+}
+ul.social{
+	padding:0;
+	margin:1em 0 0.5em 0;
+}
+ul.social li{
+	display:inline-block;
+	margin:0 5px;
+}
+ul.social li i{
+	width:70px;
+	height:70px;
+	background:url(../images/social-icons.png)no-repeat;
+	display:inline-block;
+	cursor:pointer;
+}
+ul.social li i:hover{
+	opacity:0.5;
+}
+ul.social li i.fa{
+	background-position:0px 0px;
+}
+ul.social li i.fb{
+	background-position:-70px 0px;
+}
+ul.social li i.fc{
+	background-position:-142px 0px;
+}
+.footer p{
+	font-size:0.85em;
+	color:#3c3a3e;
+	font-weight:100;
+}
+.footer p a{
+	color:#ff7105;
+}
+.footer p a:hover{
+	color:#4fbfa8;
+}
