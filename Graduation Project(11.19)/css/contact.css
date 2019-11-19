@@ -1,0 +1,84 @@
+/* 设置内容部分的样式 */
+.games{
+	margin-top: 6%;
+}
+/* 输入框部分内容 */
+.contact-box{
+	width:70%;
+	float:left;
+	margin-right:3%;
+}
+/* 右侧文字部分内容 */
+.address-box{
+	width:27%;
+	float:left;
+}
+/* 三个输入框的边距 */
+.text{
+	/* margin:1em 0; */
+	margin-top: 5%;
+}
+/* 设置三个输入框的样式 */
+.text input[type="text"]{
+	width:30%;
+	margin-right:2%;
+	padding:10px;
+	border:1px solid #ff7105;
+	outline:none;
+	-webkit-appearance:none;
+}
+/* 设置下方大输入框的样式 */
+.text textarea{
+	width:97.7%;
+	height:250px;
+	border:1px solid #ff7105;
+	outline:none;
+	-webkit-appearance:none;
+	padding:10px;
+	resize:none;
+}
+/* 提交按钮 */
+.text-but{
+	margin:1em 0;
+	text-align:center;
+}
+/* 提交按钮的初始样式 */
+.text-but input[type="submit"], .text-cmt input[type="submit"]{
+	font-size:0.875em;
+	color:#fff;
+	text-transform:uppercase;
+	background:#ff7105;
+	padding:10px 20px;
+	outline:none;
+	-webkit-appearance:none;
+	cursor: pointer;
+	border:0;
+}
+/* 提交按钮获取鼠标焦点后的样式动画 */
+.text-but input[type="submit"]:hover, .text-cmt input[type="submit"]:hover{
+	background:#4fbfa8;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+/* 右侧文字样式 */
+.address-box h4{
+	font-size:0.875em;
+	color:#000;
+	font-weight:500;
+	text-transform:uppercase;
+	margin-bottom:0.5em;
+}
+.address-box p{
+	font-size:0.8em;
+	font-weight:100;
+	line-height:1.6em;
+	margin:0.5em 0;
+}
+.address-box a{
+	font-size:0.8em;
+	color:#4fbfa8;
+	font-weight:100;
+}
